@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use('/api/auth', require('./src/routes/authRoutes'));
 app.use('/api/tasks', require('./src/routes/taskRoutes'));
 
-app.get("/",()=>{
+app.get("/",(req, res)=>{
   res.send("Api is working")
 })
 
